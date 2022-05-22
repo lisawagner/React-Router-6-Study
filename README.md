@@ -6,9 +6,11 @@ This project is a study case. I'm taking a project initially created with react-
 
 The new version of react router comes with a few improvements and breaking changes. Most notable is the way we declare routes. This changes how we do nested routes, use redirects and, we no longer have the switch component. By the end of this study, I will be able to upgrade existing React projects and incorporate v6 into new projects.
 
+
    ### `<Switch>` Replaced with `<Routes>`
 
    All of our routes need to be inside a `<Routes>` component whenever we have a route we want to register.
+
 
    ### `<Route>` Component Handling Changed
 
@@ -20,6 +22,7 @@ The new version of react router comes with a few improvements and breaking chang
    <Route path="/about" element={<About />} />
    ```
 
+
    ### `<Redirect>` Changed:
 
    In version 5, we use the `<Redirect>` component and add a `to` prop, indicating where we want to redirect.
@@ -29,6 +32,7 @@ The new version of react router comes with a few improvements and breaking chang
    ```javascript
    <Route path="/redirect" element={<Navigate to="/about" />}/>
    ```
+
 
    ### Conditional Redirects
 
@@ -41,6 +45,7 @@ The new version of react router comes with a few improvements and breaking chang
      path="/checkout"
      element={isCartEmpty ? <Navigate to="/products" /> : <p>Congrats! You have successfully made it to the checkout cart. </p> }/>
    ```
+
 
    ### How to Programmatically Redirect User
 
@@ -57,6 +62,7 @@ The new version of react router comes with a few improvements and breaking chang
    ```javascript
    <button onClick={() => navigate('/products') }>See our products</button>
    ```
+
 
    ### Route Nesting
 
@@ -91,6 +97,7 @@ In V6 becomes:
 ```javascript
 <Route path="/about/*" element={<About />} />
 ```
+
 
 ### Mutable Route Nesting
 
