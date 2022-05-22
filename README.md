@@ -1,5 +1,4 @@
-# React Router V6 Study
----
+# React Router V6 Study---
 
 This project is a study case. I'm taking a project initially created with react-router-dom V5 and converting it to V6 in order to learn how to integrate the new routing into other apps/sites.
 
