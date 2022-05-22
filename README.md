@@ -20,3 +20,13 @@ How we register the jsx component for the route is different too, it is no longe
 <Route path="/about" element={<About />} />
 ```
 
+### `<Redirect>` changed:
+
+In version 5, we use the `<Redirect>` component and add a `to` prop indicating where we want to redirect to.
+
+Now in V6, this redirect component no longer exists. Instead, we need to use the `<Navigate>` component
+
+```javascript
+<Route path="/redirect" element={<Navigate to="/about" />}/>
+```
+
