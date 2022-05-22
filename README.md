@@ -1,4 +1,4 @@
-# React Router V6 Study---
+# React Router V6 Study
 
 This project is a study case. I'm taking a project initially created with react-router-dom V5 and converting it to V6 in order to learn how to integrate the new routing into other apps/sites.
 
@@ -9,7 +9,7 @@ The new version of react router comes with a few improvements and breaking chang
 
 ### `<Switch>` Replaced with `<Routes>`
 
-All of our routes need to be inside a `<Routes>` component whenever we have a route we want to register.
+> All of our routes need to be inside a `<Routes>` component whenever we have a route we want to register.
 
 
 ### `<Route>` Component Handling Changed
