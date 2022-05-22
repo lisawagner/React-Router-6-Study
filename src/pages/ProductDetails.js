@@ -1,4 +1,4 @@
-import { Route, useParams } from "react-router-dom"
+import { Route, Routes, useParams } from "react-router-dom"
 
 // nested routes
 import Offers from "./Offers"
@@ -20,9 +20,11 @@ export default function ProductDetails() {
         </div>
       </div>
 
-      {/* <Route path={`${path}/offers`}>
-        <Offers />
-      </Route> */}
+      {/* nested route: */}
+      <Routes>
+        <Route path={`offers`} element={<Offers />} />
+      </Routes>
+
     </div>
   )
 }
