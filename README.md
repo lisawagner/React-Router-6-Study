@@ -9,14 +9,14 @@ The new version of react router comes with a few improvements and breaking chang
 
 ### `<Switch>` Replaced with `<Routes>`
 
-> All of our routes need to be inside a `<Routes>` component whenever we have a route we want to register.
+All of our routes need to be inside a `<Routes>` component whenever we have a route we want to register.
 
 
 ### `<Route>` Component Handling Changed
 
-> The 'exact' prop is no longer required. It's *default* now.
+The 'exact' prop is no longer required. It is *default* now.
 
-> How we register the jsx component for the route is different too, it is no longer nested inside opening and closing route markers. Route is now self closing and has an 'element' prop added to display the jsx component, like so:
+How we register the jsx component for the route is different too, it is no longer nested inside opening and closing route markers. Route is now self closing and has an 'element' prop added to display the jsx component, like so:
 
 ```javascript
   <Route path="/about" element={<About />} />
